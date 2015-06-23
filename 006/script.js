@@ -1,4 +1,4 @@
-function myFunction(theObject) {
+function myFunc(theObject) {
   theObject.brand = "Toyata"
 }
 
@@ -8,6 +8,19 @@ var myCar = {
   year: 1998
 }
 
-console.log(myCar.brand);
+var yourCar = {
+  brand: "Ford",
+  model: "POS",
+  year: 2002
+}
 
-myFunc(myCar.brand);
+document.writeln(myCar.brand + "<br/>" + yourCar.brand + "<br/>");
+
+var x = new Number(Math.random(Math.floor()*1));
+document.writeln(x + "<br/>");
+
+function writeName() {
+  var firstName = document.getElementById("firstName");
+  var namer = firstName.value;
+  document.getElementById("nameArea").innerHTML = namer;
+}
