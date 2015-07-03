@@ -3,4 +3,4 @@ console.log(link.href);
 
 var awesome = document.getElementById('awesome');
 console.log(awesome.id);
-console.log('logging')
+console.log('log')
