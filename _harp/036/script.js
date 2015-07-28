@@ -6,4 +6,4 @@ function doMath(){
   document.querySelector('#answer').innerHTML = rounded;
 }
 
-
+console.log('gonna make more later but just testing this for now and again now')
