@@ -3,14 +3,12 @@ $('body').on('click', function() {
 });
 
 $('button').on('click', function(){
-    var x = $('input').val();
-    var y = x * .05;
-    $('h1').text(y);
+    var payment = $('#proof-value').val();
+    if ($('#proof-rate').prop('checked')) {
+        var savings = (payment * .15) * 12;
+    }
+    else {
+        var savings = payment * .15;
+    }
+    $('h1').text(Math.round(savings * 100) / 100);
 });
-
-function display(start){
-    y = start * .05
-    document.querySelector('h1').innerHTML = y;
-}
-var x = document.querySelector('input');
-
